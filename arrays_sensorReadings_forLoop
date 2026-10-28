@@ -1,0 +1,30 @@
+
+//declaring an integer array of 5 elements representing 5 sensor readings from five proximity sensors along a conveyor 
+//From the five positions ,different activities are carried out in production of the clean drinking water 
+ int sensorPosition [5] = { 50, 40 , 30 , 20 , 10 ,};//the position of the proximity sensors with different activities being carried out at each stop
+void setup (){
+ Serial.begin (9600)  
+   
+}
+void loop(){
+     for (int i = 0 ; i < 5 ; i++){
+        Serial.println(sensorPosition[i]);//prints each position at a time 
+     switch (sensorPosition[i]){
+     case 50 :
+     Serial.print ("emboss the name Great");
+     break;
+     case 40 :
+     Serial.print("add the wrapper");
+     break;
+     case 30 :
+     Serial.print("add water to the bottles");
+     break;
+     case 20 :
+     Serial.print("put the lids on the bottle");
+     break;
+     case 10:
+     Serial.print(" confirm the lid is tight");
+     break 1000;
+     }
+    }
+}
