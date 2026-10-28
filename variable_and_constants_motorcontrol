@@ -1,0 +1,22 @@
+//varaibles assigned value can be changed by simply assigning it a different value to it 
+//constants value cannot be tampered with throughout the program 
+//defining constant maximum motor speed and variable current speed in motor control
+#define int maximun_speed = 250 //constant variable can also be declared as (const int maximum_speed = 100:)
+void setup (){
+    Serial.print(9600):
+const int speed = A0 :
+
+}
+void loop(){
+
+    static int currentSpeed ;//variable changing over time
+analogRead( speed):
+currentSpeed = speed ;
+while(currentSpeed <maximum_speed){
+    Serial.print("safe speed");
+
+
+currentSpeed ++;
+Serial.println(currentSpeed);}
+delay 1000;
+}
